@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #00ff88;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00ff88;
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+.score {
+    color: #fff;
+}
+
+.score p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.score h2 {
+    font-size: 36px;
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+#pongCanvas {
+    display: block;
+    background: #000;
+    border: 3px solid #00ff88;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+    cursor: none;
+}
+
+.controls {
+    color: #fff;
+}
+
+.controls p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: #00ff88;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.controls button:hover {
+    background: #00dd77;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+}
+
+.controls button:active {
+    transform: translateY(0);
+}
+
+#pauseBtn.paused {
+    background: #ff6b6b;
+}
+
+#pauseBtn.paused:hover {
+    background: #ff5252;
+}
